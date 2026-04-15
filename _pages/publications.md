@@ -9,19 +9,37 @@ You can also find my articles on <u><a href="https://scholar.google.com/citation
 
 A <sup>*</sup> next to the authors' names indicates a co-first-author publication.
 
-
+{% assign preprint_pubs = site.publications | where: "category", "preprints" | sort: "date" | reverse %}
+{% assign journal_pubs = site.publications | where: "category", "manuscripts" | sort: "date" | reverse %}
+{% assign conf_pubs = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
 
 Preprints and Publications Under Review
 ------
+{% if preprint_pubs.size > 0 %}
+{% for pub in preprint_pubs %}
+* {{ pub.authors }}, "{{ pub.title }}", {{ pub.venue }}{% if pub.paperurl %}, [[URL]({{ pub.paperurl }})]{% endif %}
+
+{% endfor %}
+{% else %}
+Nothing here yet!
+{% endif %}
 
 Journal Publications
 ------
+{% if journal_pubs.size > 0 %}
+{% for pub in journal_pubs %}
+* {{ pub.authors }}, "{{ pub.title }}", {{ pub.venue }}{% if pub.paperurl %}, [[URL]({{ pub.paperurl }})]{% endif %}
 
+{% endfor %}
+{% else %}
 Coming soon (on an academic timescale)!
-
-
+{% endif %}
 
 Conference Publications
 ------
+{% if conf_pubs.size > 0 %}
+{% for pub in conf_pubs %}
+* {{ pub.authors }}, "{{ pub.title }}", {{ pub.status | append: " to the " }}{{ pub.venue }}{% if pub.paperurl %}, [[URL]({{ pub.paperurl }})]{% endif %}
 
-* Taosha Guo<sup>*</sup>, <b>Arie Ogranovich<sup>*</sup></b>, Arvind Venkatakrishnan, Madelyn Shapiro, Francesco Bullo, Fabio Pasqualetti, "Oscillatory Associative Memory with Exponential Capacity", accepted to the 64<sup>th</sup> IEEE Conference on Decision and Control (CDC), 2025, [[URL](https://arxiv.org/abs/2507.03293)]
+{% endfor %}
+{% endif %}
