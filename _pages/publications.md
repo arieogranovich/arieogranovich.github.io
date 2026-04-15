@@ -10,7 +10,7 @@ You can also find my articles on <u><a href="https://scholar.google.com/citation
 A <sup>*</sup> next to the authors' names indicates a co-first-author publication.
 
 {% assign preprint_pubs = site.publications | where: "category", "preprints" | sort: "date" | reverse %}
-{% assign journal_pubs = site.publications | where: "category", "manuscripts" | sort: "date" | reverse %}
+{% assign journal_pubs = site.publications | where: "category", "journals" | sort: "date" | reverse %}
 {% assign conf_pubs = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
 
 Preprints and Publications Under Review

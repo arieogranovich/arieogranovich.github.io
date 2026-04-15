@@ -2,7 +2,7 @@
 title: "Oscillator-Based Associative Memory with Exponential Capacity:
 Theory, Algorithms, and Hardware Implementation"
 collection: publications
-category: journals
+category: preprints
 authors: '<b>Arie Ogranovich<sup>*</sup></b>, Taosha Guo<sup>*</sup>, Arvind Venkatakrishnan, Madelyn Shapiro, Francesco Bullo, Fabio Pasqualetti'
 venue: 
 status: 'Submitted'
