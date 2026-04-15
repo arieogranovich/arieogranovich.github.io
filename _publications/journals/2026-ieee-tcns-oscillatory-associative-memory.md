@@ -4,7 +4,7 @@ Theory, Algorithms, and Hardware Implementation"
 collection: publications
 category: preprints
 authors: '<b>Arie Ogranovich<sup>*</sup></b>, Taosha Guo<sup>*</sup>, Arvind Venkatakrishnan, Madelyn Shapiro, Francesco Bullo, Fabio Pasqualetti'
-venue: 
+venue: 'Submitted, IEEE Transactions on Control of Network Systems'
 status: 'Submitted'
 date: 2025-12-15
 paperurl: 'https://arxiv.org/pdf/2604.01469'
